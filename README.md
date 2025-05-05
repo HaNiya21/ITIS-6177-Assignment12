@@ -26,3 +26,6 @@ LoopBack 4 (https://loopback.io/)
 ## Setup Instructions
 1. Install dependencies:
 npm install
+
+![screenshot1](image.png)
+![alt text](image-1.png)
