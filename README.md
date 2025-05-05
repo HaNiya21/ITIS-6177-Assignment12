@@ -6,10 +6,27 @@ REST API for product management with full CRUD operations
 ## Tool Used
 LoopBack 4 (https://loopback.io/)
 
+## Development Steps
+1. Installed LoopBack CLI:  
+   `npm install -g @loopback/cli`
+2. Created application:  
+   `lb4 app itis-6177-assignment12`
+3. Generated Product model:  
+   `lb4 model` (with properties: id, name, price)
+4. Created datasource:  
+   `lb4 datasource` (selected in-memory database)
+5. Built repository:  
+   `lb4 repository`
+6. Created REST controller:  
+   `lb4 controller`
+
 ## Features
-- In-memory database
-- OpenAPI 3.0 documentation
-- Ready-to-use endpoints
+- In-memory database (no setup required)
+- Auto-generated OpenAPI 3.0 documentation
+- Complete CRUD endpoints
+- Built-in API Explorer
+
+
 
 ## API Endpoints
 | Method | Endpoint | Description |
@@ -23,9 +40,18 @@ LoopBack 4 (https://loopback.io/)
 | GET    | /products/count | Count products |
 | PATCH  | /products | Bulk update products |
 
-## Setup Instructions
-1. Install dependencies:
-npm install
+## Installation & Execution
+1. Install dependencies: `npm install`
+2. Start server: `npm start`
+3. Access at: http://localhost:3000
 
-![screenshot1](image.png)
-![alt text](image-1.png)
+
+## Example Endpoints
+- GET /products - List all products
+- POST /products - Create new product
+- GET /products/{id} - Get product by ID
+
+
+![Access at localhost:3000](image-1.png)
+![API Explorer
+Figure 2: API Documentation in Swagger UI](image.png)
